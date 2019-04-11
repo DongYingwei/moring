@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.minitoring.mapper.Mapper">
+
+    <!-- 查所有对象 -->
+    <select id="listAllUser" resultType="com.minitoring.pojo.User">
+        SELECT  uid,long_pred,lait_pred FROM  result WHERE uid=1000000001 group by data limit 10 ;
+</select>
+
+</mapper>
